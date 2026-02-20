@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,646 +12,729 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
   </head>
   <body>
-    <nav class="nav-bar">
+    <!-- ====== NAVBAR ====== -->
+    <nav class="nav-bar" id="navbar">
       <div class="logo">
-        <img src="./image/logo.png" class="logo-image" alt="" />
+        <img
+          src="./image/logo.png"
+          class="logo-image"
+          alt="Food On Line Logo"
+        />
       </div>
-      <ul class="items">
+
+      <button
+        class="hamburger"
+        id="hamburger"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="items" id="nav-menu">
         <li class="item"><a href="#home">Home</a></li>
         <li class="item"><a href="#about">About</a></li>
         <li class="item"><a href="#menu">Menu</a></li>
-        <li class="item"><a href="#gallary">Gallary</a></li>
-        <li class="item"><a href="#reviews">Review</a></li>
+        <li class="item"><a href="#gallary">Gallery</a></li>
+        <li class="item"><a href="#reviews">Reviews</a></li>
         <li class="item"><a href="#order-now_section">Order</a></li>
+        <!-- Mobile icons inside menu -->
+        <li class="item nav-icons-mobile">
+          <i class="bi icon bi-search"></i>
+          <i class="bi icon bi-heart"></i>
+          <i class="bi icon bi-cart"></i>
+        </li>
       </ul>
-      <div class="icons">
+
+      <div class="icons desktop-icons">
         <i class="bi icon bi-search"></i>
         <i class="bi icon bi-heart"></i>
         <i class="bi icon bi-cart"></i>
       </div>
     </nav>
-    <!-- HOME -->
+
+    <!-- ====== HOME ====== -->
     <section class="home" id="home">
       <div class="home-left">
+        <span class="home-badge">🍽 Fresh & Fast Delivery</span>
         <h1 class="home_title">
-          Get Fresh <span class="home_title--style">Food</span> <br />
-          in a Easy Way
+          Get Fresh <span class="home_title--style">Food</span><br />
+          in an Easy Way
         </h1>
         <p class="home-description">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-          reiciendis quaerat nobis deleniti amet non inventore. Reprehenderit
-          recusandae voluptatibus minus tenetur itaque numquam cum quos dolorem
-          maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Cumque facilis, quaerat cupiditate nulla quibusdam
-          quo sunt esse tempore inventore vel voluptate, amet laudantium
-          adipisci veniam nihil quam molestiae omnis mollitia.
+          Découvrez une cuisine savoureuse livrée directement chez vous. Des
+          ingrédients frais, des recettes authentiques et une expérience
+          gustative inoubliable à chaque commande.
         </p>
-        <button class="order-now">Order Now</button>
+        <div class="home-cta">
+          <button class="btn-primary">Order Now</button>
+          <button class="btn-secondary">View Menu</button>
+        </div>
+        <div class="home-stats">
+          <div class="stat">
+            <span class="stat-num">2K+</span><span>Clients</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">150+</span><span>Plats</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-num">4.9★</span><span>Note</span>
+          </div>
+        </div>
       </div>
       <div class="home-right">
-        <img src="./image/main_img.png" alt="image principale" />
+        <div class="home-img-wrapper">
+          <img src="./image/main_img.png" alt="Plat principal" />
+          <div class="floating-badge badge-1">🔥 Hot Deal</div>
+          <div class="floating-badge badge-2">⚡ 30 min delivery</div>
+        </div>
       </div>
     </section>
 
-    <!-- About -->
+    <!-- ====== ABOUT ====== -->
     <section class="about" id="about">
       <div class="about-left">
-        <img src="./image/Food-Plate.png" alt="" />
+        <img src="./image/Food-Plate.png" alt="Food Plate" />
       </div>
       <div class="about-right">
+        <span class="section-badge">Notre Histoire</span>
         <h2 class="about-title">
-          <span class="about-title--style">About </span>Us
+          <span class="about-title--style">About</span> Us
         </h2>
-        <h3 class="about-subtitle">Why Choose us ?</h3>
+        <h3 class="about-subtitle">Pourquoi nous choisir ?</h3>
         <p class="about-description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita,
-          est. Doloremque sapiente veritatis laboriosam corrupti optio et
-          maxime. Ad, amet explicabo eaque labore cupiditate quasi nostrum nemo
-          recusandae id quibusdam? Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Doloremque ab, dolores pariatur cum exercitationem,
-          illo nisi veritatis vitae ea deleniti fugiat quisquam tempora,
-          accusantium corrupti excepturi optio. Inventore, cupiditate
-          recusandae.
+          Nous sommes passionnés par la gastronomie et l'excellence culinaire.
+          Chaque plat est préparé avec des ingrédients soigneusement
+          sélectionnés pour vous offrir une expérience gustative unique et
+          mémorable.
         </p>
-        <button class="order-now">Order Now</button>
+        <div class="about-features">
+          <div class="feature">
+            <i class="bi bi-check-circle-fill"></i> Ingrédients frais et locaux
+          </div>
+          <div class="feature">
+            <i class="bi bi-check-circle-fill"></i> Livraison rapide et soignée
+          </div>
+          <div class="feature">
+            <i class="bi bi-check-circle-fill"></i> Chefs expérimentés
+          </div>
+        </div>
+        <button class="btn-primary">En savoir plus</button>
       </div>
     </section>
 
-    <!-- menu -->
+    <!-- ====== MENU ====== -->
     <section class="menu" id="menu">
+      <span class="section-badge centered">Découvrez</span>
       <h1 class="menu-title">
-        Our <span class="menu-title--style">menu</span>
+        Notre <span class="menu-title--style">Menu</span>
       </h1>
-      <div class="menu-container">
-        <div class="row">
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/buger.jpg" alt="" />
-            </div>
-            <p class="menu-name">Buger</p>
-            <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
 
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/pasta.jpg" alt="" />
-            </div>
-            <p class="menu-name">pasta</p>
-            <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn" data-filter="food">Plats</button>
+        <button class="filter-btn" data-filter="drink">Boissons</button>
+        <button class="filter-btn" data-filter="dessert">Desserts</button>
+      </div>
 
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/lasagna.webp" alt="" />
-            </div>
-            <p class="menu-name">lasagna</p>
-            <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
+      <div class="menu-grid">
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/buger.jpg" alt="Burger" loading="lazy" />
           </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/chocolate_Drink.jpg" alt="" />
-            </div>
-            <p class="menu-name">Drink</p>
+          <div class="menu-info">
+            <p class="menu-name">Burger</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Bœuf juteux, fromage fondant, légumes croquants et sauce maison.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
+            <div class="menu-footer">
+              <p class="price">$20</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
           </div>
         </div>
-        <div class="row">
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/pizza.jpg" alt="" />
-            </div>
-            <p class="menu-name">pizza</p>
-            <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
-            </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
 
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/Hot_dog.jpg" alt="" />
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/pasta.jpg" alt="Pasta" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <p class="menu-name">Pasta</p>
+            <p class="menu-description">
+              Pâtes fraîches, sauce tomate maison et herbes aromatiques.
+            </p>
+            <div class="menu-footer">
+              <p class="price">$18</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
             </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/lasagna.webp" alt="Lasagna" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <p class="menu-name">Lasagna</p>
+            <p class="menu-description">
+              Couches généreuses de bœuf, béchamel crémeuse et fromage gratiné.
+            </p>
+            <div class="menu-footer">
+              <p class="price">$22</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="drink">
+          <div class="box-image">
+            <img
+              src="/image/chocolate_Drink.jpg"
+              alt="Chocolate Drink"
+              loading="lazy"
+            />
+          </div>
+          <div class="menu-info">
+            <p class="menu-name">Choco Drink</p>
+            <p class="menu-description">
+              Boisson chocolatée onctueuse, servie chaude ou glacée selon votre
+              envie.
+            </p>
+            <div class="menu-footer">
+              <p class="price">$8</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/pizza.jpg" alt="Pizza" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <p class="menu-name">Pizza</p>
+            <p class="menu-description">
+              Pâte fine croustillante, mozzarella fondante et garnitures
+              généreuses.
+            </p>
+            <div class="menu-footer">
+              <p class="price">$24</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/Hot_dog.jpg" alt="Hot Dog" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Hot Dog</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Saucisse grillée, pain moelleux et condiments à volonté.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/juse.jpg" alt="" />
+            <div class="menu-footer">
+              <p class="price">$12</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star"></i>
+              </div>
             </div>
-            <p class="menu-name">Juse</p>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="drink">
+          <div class="box-image">
+            <img src="/image/juse.jpg" alt="Juice" loading="lazy" />
+          </div>
+          <div class="menu-info">
+            <p class="menu-name">Jus Frais</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Jus de fruits 100% naturels, pressés à la commande pour vous.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/biryani.webp" alt="" />
+            <div class="menu-footer">
+              <p class="price">$7</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
             </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/biryani.webp" alt="Biryani" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Biryani</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Riz basmati parfumé aux épices, poulet tendre et herbes fraîches.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
+            <div class="menu-footer">
+              <p class="price">$26</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
           </div>
         </div>
-        <div class="row">
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/chocolate.jpg" alt="" />
-            </div>
+
+        <div class="menu-box" data-category="dessert">
+          <div class="box-image">
+            <img src="/image/chocolate.jpg" alt="Chocolate" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Chocolate</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Fondant au chocolat coulant, servi tiède avec une quenelle de
+              crème.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/ice_cream.jpg" alt="" />
+            <div class="menu-footer">
+              <p class="price">$10</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i
+                ><i class="bi bi-star"></i>
+              </div>
             </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="dessert">
+          <div class="box-image">
+            <img src="/image/ice_cream.jpg" alt="Ice Cream" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Ice Cream</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Glace artisanale aux saveurs variées, garnie de toppings
+              gourmands.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/Spanchi.jpg" alt="" />
+            <div class="menu-footer">
+              <p class="price">$9</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i
+                ><i class="bi bi-star"></i>
+              </div>
             </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/Spanchi.jpg" alt="Spanchi" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Spanchi</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Spécialité maison préparée avec les meilleurs ingrédients du
+              marché.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
-          </div>
-
-          <div class="menu-box">
-            <div class="box-image">
-              <img src="/image/sandwich.jpg" alt="" />
+            <div class="menu-footer">
+              <p class="price">$16</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i
+                ><i class="bi bi-star"></i>
+              </div>
             </div>
+            <button class="menu-btn__order-now">Commander</button>
+          </div>
+        </div>
+
+        <div class="menu-box" data-category="food">
+          <div class="box-image">
+            <img src="/image/sandwich.jpg" alt="Sandwich" loading="lazy" />
+          </div>
+          <div class="menu-info">
             <p class="menu-name">Sandwich</p>
             <p class="menu-description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              assumenda voluptates
+              Pain artisanal, garnitures fraîches et sauce secrète de la maison.
             </p>
-            <p class="price">$20</p>
-            <p class="note">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
-              ><i class="bi bi-star-fill"></i>
-            </p>
-            <button class="menu-btn__order-now">Order Now</button>
+            <div class="menu-footer">
+              <p class="price">$14</p>
+              <div class="stars">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star"></i>
+              </div>
+            </div>
+            <button class="menu-btn__order-now">Commander</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Gallary -->
+    <!-- ====== GALLERY ====== -->
     <section class="gallary" id="gallary">
+      <span class="section-badge centered">Nos Créations</span>
       <h1 class="gallary-title">
-        Our <span class="gallary-title--style">Gallary</span>
+        Notre <span class="gallary-title--style">Galerie</span>
       </h1>
-      <div class="row">
-        <div class="gallary-box-1">
-          <img src="./image/gallary_2.jpg" alt="" />
+      <div class="gallery-grid">
+        <div class="gallary-box-1 gallery-large">
+          <img src="./image/gallary_2.jpg" alt="Gallery 1" loading="lazy" />
           <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
+            <p>Spécialités fraîches préparées chaque jour par nos chefs.</p>
+            <button class="gallary-order-now">Commander</button>
           </div>
         </div>
         <div class="gallary-box-1">
-          <img src="./image/gallary_1.jpg" alt="" />
+          <img src="./image/gallary_1.jpg" alt="Gallery 2" loading="lazy" />
           <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
+            <p>Plats élaborés avec passion et créativité.</p>
+            <button class="gallary-order-now">Commander</button>
           </div>
         </div>
         <div class="gallary-box-1">
-          <img src="./image/gallary_3.jpg" alt="" />
+          <img src="./image/gallary_3.jpg" alt="Gallery 3" loading="lazy" />
           <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="gallary-box-1">
-          <img src="./image/gallary_4.jpg" alt="" />
-          <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
+            <p>Une expérience culinaire inoubliable.</p>
+            <button class="gallary-order-now">Commander</button>
           </div>
         </div>
         <div class="gallary-box-1">
-          <img src="./image/gallary_5.jpg" alt="" />
+          <img src="./image/gallary_4.jpg" alt="Gallery 4" loading="lazy" />
           <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
+            <p>Des saveurs authentiques à partager.</p>
+            <button class="gallary-order-now">Commander</button>
+          </div>
+        </div>
+        <div class="gallary-box-1 gallery-wide">
+          <img src="./image/gallary_5.jpg" alt="Gallery 5" loading="lazy" />
+          <div class="gallary-box-2">
+            <p>Le meilleur de la gastronomie, livré chez vous.</p>
+            <button class="gallary-order-now">Commander</button>
           </div>
         </div>
         <div class="gallary-box-1">
-          <img src="./image/gallary_6.jpg" alt="" />
+          <img src="./image/gallary_6.jpg" alt="Gallery 6" loading="lazy" />
           <div class="gallary-box-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-            tempore natus amet quasi dolorum eos, vitae labore magni,
-            <button class="gallary-order-now">Order Now</button>
+            <p>Chaque bouchée raconte une histoire.</p>
+            <button class="gallary-order-now">Commander</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Reviews -->
-
+    <!-- ====== REVIEWS ====== -->
     <section class="reviews" id="reviews">
+      <span class="section-badge centered">Témoignages</span>
       <h1 class="reviews-title">
-        Customer <span class="reviews-title--style"> Review</span>
+        Ce que disent nos <span class="reviews-title--style">Clients</span>
       </h1>
       <div class="reviews-row">
         <div class="customer-box">
+          <div class="quote-icon">"</div>
+          <p class="text">
+            Un service impeccable et des plats qui dépassent toutes mes
+            attentes. Je recommande vivement à tous mes proches !
+          </p>
           <div class="customer-header">
             <div class="img">
-              <img src="/image/review_2.png" alt="Portrait de John Deo" />
+              <img src="/image/review_2.png" alt="Marie Koné" />
             </div>
-            <p class="customer-name">John Deo</p>
-            <div class="note">
-              <!-- Note : 2/5 étoiles -->
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <div class="socials">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-whatsapp"></i>
-              <i class="bi bi-telegram"></i>
+            <div class="customer-info">
+              <p class="customer-name">Marie Koné</p>
+              <div class="note">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
             </div>
           </div>
+        </div>
+        <div class="customer-box featured">
+          <div class="quote-icon">"</div>
           <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque modi
-            architecto dolor magnam distinctio quia, reprehenderit similique aut
-            dolorum, id quos assumenda, error nostrum voluptas sint.
+            La livraison est ultra rapide et la nourriture arrive toujours
+            chaude. Un vrai régal pour les papilles, bravo à toute l'équipe !
           </p>
+          <div class="customer-header">
+            <div class="img">
+              <img src="/image/review_3.png" alt="Jean-Pierre Brou" />
+            </div>
+            <div class="customer-info">
+              <p class="customer-name">Jean-Pierre Brou</p>
+              <div class="note">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="customer-box">
+          <div class="quote-icon">"</div>
+          <p class="text">
+            Des saveurs authentiques et généreuses. Chaque commande est une
+            découverte gastronomique. Je suis conquise !
+          </p>
           <div class="customer-header">
             <div class="img">
-              <img src="/image/review_3.png" alt="Portrait de John Deo" />
+              <img src="/image/review_4.png" alt="Fatou Diallo" />
             </div>
-            <p class="customer-name">John Deo</p>
-            <div class="note">
-              <!-- Note : 2/5 étoiles -->
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <div class="socials">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-whatsapp"></i>
-              <i class="bi bi-telegram"></i>
+            <div class="customer-info">
+              <p class="customer-name">Fatou Diallo</p>
+              <div class="note">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                ><i class="bi bi-star-half"></i>
+              </div>
             </div>
           </div>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque modi
-            architecto dolor magnam distinctio quia, reprehenderit similique aut
-            dolorum, id quos assumenda, error nostrum voluptas sint.
-          </p>
-        </div>
-        <div class="customer-box">
-          <div class="customer-header">
-            <div class="img">
-              <img src="/image/review_4.png" alt="Portrait de John Deo" />
-            </div>
-            <p class="customer-name">John Deo</p>
-            <div class="note">
-              <!-- Note : 2/5 étoiles -->
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-              <i class="bi bi-star"></i>
-            </div>
-            <div class="socials">
-              <i class="bi bi-facebook"></i>
-              <i class="bi bi-whatsapp"></i>
-              <i class="bi bi-telegram"></i>
-            </div>
-          </div>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque modi
-            architecto dolor magnam distinctio quia, reprehenderit similique aut
-            dolorum, id quos assumenda, error nostrum voluptas sint.
-          </p>
         </div>
       </div>
     </section>
 
-    <!-- Order Now -->
+    <!-- ====== ORDER ====== -->
     <section class="order-now_section" id="order-now_section">
+      <span class="section-badge centered light">Commander</span>
       <h1 class="order-now__title">
-        <span class="order-now__title--style">Order</span> Now
+        <span class="order-now__title--style">Passez</span> votre commande
       </h1>
       <div class="order-now__row">
         <div class="order-now__left">
-          <img src="/image/order_image.png" alt="order image" />
+          <img src="/image/order_image.png" alt="Order illustration" />
         </div>
         <div class="order-now__right">
-          <form action="">
-            <div class="inputs-group-right">
-              <label for="name">Name</label>
+          <form action="" id="order-form" novalidate>
+            <div class="form-group">
+              <label for="name"><i class="bi bi-person"></i> Nom complet</label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                placeholder="your name"
-              />
-              <label for="number">Number</label>
-              <input
-                type="tel"
-                name="number"
-                id="number"
-                placeholder="your number"
-              />
-              <label for="order">Your Order</label>
-              <input
-                type="text"
-                name="order"
-                id="order"
-                placeholder="your food name"
+                placeholder="Votre nom"
               />
             </div>
-            <div class="inputs-group-right">
-              <label for="email">Email</label>
+            <div class="form-group">
+              <label for="email"><i class="bi bi-envelope"></i> Email</label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                placeholder="your email"
+                placeholder="Votre email"
               />
-              <label for="much">How Much</label>
+            </div>
+            <div class="form-group">
+              <label for="number"
+                ><i class="bi bi-telephone"></i> Téléphone</label
+              >
+              <input
+                type="tel"
+                name="number"
+                id="number"
+                placeholder="Votre numéro"
+              />
+            </div>
+            <div class="form-group">
+              <label for="order"
+                ><i class="bi bi-bag"></i> Votre commande</label
+              >
+              <input
+                type="text"
+                name="order"
+                id="order"
+                placeholder="Nom du plat"
+              />
+            </div>
+            <div class="form-group">
+              <label for="much"><i class="bi bi-hash"></i> Quantité</label>
               <input
                 type="number"
                 name="much"
                 id="much"
-                placeholder="your much"
+                placeholder="Nombre de portions"
+                min="1"
               />
-              <label for="address">Adress</label>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="address"
+                ><i class="bi bi-geo-alt"></i> Adresse de livraison</label
+              >
               <input
                 type="text"
                 name="address"
                 id="address"
-                placeholder="your address"
+                placeholder="Votre adresse complète"
               />
+            </div>
+            <div class="form-group form-group--full">
+              <button type="submit" class="btn-primary btn-submit">
+                <i class="bi bi-bag-check"></i> Confirmer la commande
+              </button>
             </div>
           </form>
         </div>
       </div>
     </section>
 
-    <!-- Teams -->
+    <!-- ====== TEAMS ====== -->
     <section class="teams" id="teams">
+      <span class="section-badge centered light">Notre Équipe</span>
       <h1 class="teams-title">
-        Our <span class="teams-title--style">Teams</span>
+        Nos <span class="teams-title--style">Chefs</span>
       </h1>
       <div class="teams__row">
         <div class="teams__bow">
-          <img src="/image/chef1.png" alt="" />
+          <img src="/image/chef1.png" alt="Chef 1" loading="lazy" />
           <div class="teams__context">
-            <h3 class="team__name">Chef</h3>
+            <h3 class="team__name">Chef Ahmed</h3>
             <p class="team__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex
+              Spécialiste en cuisine méditerranéenne, 10 ans d'expérience.
             </p>
             <p class="team__social">
-              <i class="bi bi-facebook-fill"></i>
-              <i class="bi bi-whatsapp-fill"></i>
-              <i class="bi bi-telegram-fill"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
             </p>
           </div>
         </div>
         <div class="teams__bow">
-          <img src="/image/chef2.png" alt="" />
+          <img src="/image/chef2.png" alt="Chef 2" loading="lazy" />
           <div class="teams__context">
-            <h3 class="team__name">Chef</h3>
+            <h3 class="team__name">Chef Sophie</h3>
             <p class="team__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex
+              Experte en pâtisserie et desserts créatifs depuis 8 ans.
             </p>
             <p class="team__social">
-              <i class="bi bi-facebook-fill"></i>
-              <i class="bi bi-whatsapp-fill"></i>
-              <i class="bi bi-telegram-fill"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
             </p>
           </div>
         </div>
         <div class="teams__bow">
-          <img src="/image/chef3.jpg" alt="" />
+          <img src="/image/chef3.jpg" alt="Chef 3" loading="lazy" />
           <div class="teams__context">
-            <h3 class="team__name">Chef</h3>
+            <h3 class="team__name">Chef Carlos</h3>
             <p class="team__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex
+              Maître en cuisine fusion et gastronomie internationale.
             </p>
             <p class="team__social">
-              <i class="bi bi-facebook-fill"></i>
-              <i class="bi bi-whatsapp-fill"></i>
-              <i class="bi bi-telegram-fill"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
             </p>
           </div>
         </div>
         <div class="teams__bow">
-          <img src="/image/chef4.jpg" alt="" />
+          <img src="/image/chef4.jpg" alt="Chef 4" loading="lazy" />
           <div class="teams__context">
-            <h3 class="team__name">Chef</h3>
+            <h3 class="team__name">Chef Aya</h3>
             <p class="team__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet ex
+              Spécialiste de la cuisine africaine moderne et créative.
             </p>
             <p class="team__social">
-              <i class="bi bi-facebook-fill"></i>
-              <i class="bi bi-whatsapp-fill"></i>
-              <i class="bi bi-telegram-fill"></i>
+              <i class="bi bi-facebook"></i>
+              <i class="bi bi-instagram"></i>
+              <i class="bi bi-twitter"></i>
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- footer -->
-
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
       <div class="footer__container">
-        <!-- Logo / About -->
         <div class="footer__col">
-          <h2 class="footer__logo">Food</h2>
+          <h2 class="footer__logo">Food<span>OnLine</span></h2>
           <p>
             Restaurant moderne offrant une cuisine savoureuse et une expérience
-            chaleureuse pour tous.
+            chaleureuse pour toute la famille.
           </p>
-        </div>
-
-        <!-- Links -->
-        <div class="footer__col">
-          <h3>Quick Links</h3>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#teams">Teams</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
-        <!-- Contact -->
-        <div class="footer__col">
-          <h3>Contact</h3>
-          <p>📍 Abidjan, Côte d'Ivoire</p>
-          <p>📞 +225 07 01 53 62 64</p>
-          <p>✉ contact@food.com</p>
-        </div>
-
-        <!-- Social -->
-        <div class="footer__col">
-          <h3>Follow Us</h3>
           <div class="footer__social">
             <i class="bi bi-facebook"></i>
-            <i class="bi bi-whatsapp"></i>
             <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
           </div>
         </div>
+        <div class="footer__col">
+          <h3>Navigation</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallary">Gallery</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Horaires</h3>
+          <ul>
+            <li>Lun – Ven : 08h – 22h</li>
+            <li>Samedi : 09h – 23h</li>
+            <li>Dimanche : 10h – 21h</li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Contact</h3>
+          <p><i class="bi bi-geo-alt"></i> Abidjan, Côte d'Ivoire</p>
+          <p><i class="bi bi-telephone"></i> +225 07 01 53 62 64</p>
+          <p><i class="bi bi-envelope"></i> contact@food.com</p>
+        </div>
       </div>
-
-      <div class="footer__bottom">© 2026 sangDev — All rights reserved</div>
+      <div class="footer__bottom">
+        <p>© 2026 <strong>sangDev</strong> — Tous droits réservés</p>
+        <p>
+          Fait avec <span style="color: var(--color-primary)">♥</span> à Abidjan
+        </p>
+      </div>
     </footer>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Retour en haut">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="app.js" defer></script>
   </body>
 </html>
